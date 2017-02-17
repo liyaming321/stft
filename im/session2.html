@@ -1,0 +1,28 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>右下角的弹窗，消息框</title>
+<link rel="stylesheet" type="text/css" href="sessionCss.css"/>
+<script src='http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js'></script>
+<script src='http://cdn.bootcss.com/strophe.js/1.1.3/strophe.min.js'></script>
+<script src='pingstream2.js'></script>
+</head>
+<body>
+	<div id="silu">
+		<button onclick="tips_pop()" style="  ">测试按钮</button>
+	</div>
+	<div id="winpop">
+		<div class="title">
+			与XXX聊天<span class="close" onclick="tips_pop()">X</span>
+
+		</div>
+		  <div id="msg" style="height: 150px; width: 400px; overflow: scroll;overflow:auto" ></div>          
+		  <div style="margin-top: 20px; position:fixed;  bottom: 15px; ">	
+			   <input type="text" id="input-contacts" style="margin-left:5px" value="">
+			   <button id="btn-send" style="margin-left:20px">发送</button>
+		</div>
+	</div>
+</body>
+</html>

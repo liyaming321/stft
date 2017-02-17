@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> <!-- for HTML5 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src='http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js'></script>
+<script src='http://cdn.bootcss.com/strophe.js/1.1.3/strophe.min.js'></script>
+<script src='pingstream.js'></script>
+
+<script type="text/javascript">
+function sendMsg(){
+	var code = event.keyCode;
+	if(code == 13){
+		 document.getElementById("btn-send").click();  
+	}
+	}</script>
+</head>
+<body  onload="sendMsg()">
+	 JID：
+	<input type="text" id="input-jid" value="test001@imtest">
+	<br> 密码：
+	<input type="password" id="input-pwd" value="123">
+	<br>
+	<button id="btn-login">登录</button> 
+	
+	<div style="height: 50px;" ></div>
+	<div id="msg" style="height: 400px; width: 400px; overflow: scroll;overflow:auto" ></div>
+	<div style="margin-top: 20px">
+	联系人JID：
+	<input type="text" id="input-contacts" value="">
+	<br> 消息：
+	<br>
+	<textarea id="input-msg" cols="30" rows="4" style="color: #EFFFF" onkeyup="sendMsg()"></textarea>
+	<br>
+	<button id="btn-send">发送</button>
+	</div>
+	
+	
+</body>
+</html>

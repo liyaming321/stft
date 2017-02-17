@@ -1,0 +1,74 @@
+{
+  "name": "strophe.js",
+  "description": "Strophe.js is an XMPP library for JavaScript",
+  "version": "1.2.11",
+  "homepage": "http://strophe.im/strophejs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strophe/strophejs.git"
+  },
+  "keywords": [
+    "xmpp",
+    "message",
+    "bosh",
+    "websocket",
+    "browser"
+  ],
+  "files": [
+    "strophe.js",
+    "CHANGELOG.txt",
+    "LICENSE.txt",
+    "README.txt",
+    "src/"
+  ],
+  "author": "Jack Moffit (metajack)",
+  "contributors": [
+    "Nathan Zorn (thepug)",
+    "Andreas Guth (Gordin)",
+    "Anton Stroganov (Aeon)",
+    "Florian Zeitz (Florob)",
+    "Christopher Zorn (twonds)",
+    "dodo",
+    "Lee Boynton (lboynton)",
+    "Theo Cushion (theozaurus)",
+    "Brendon Crawford (brendoncrawford)",
+    "JC Brand (jcbrand)"
+  ],
+  "license": "MIT",
+  "main": "strophe.js",
+  "browser": "strophe.js",
+  "scripts": {
+    "lint": "grunt",
+    "build": "grunt",
+    "clean": "grunt clean",
+    "doc": "grunt doc",
+    "release": "grunt release"
+  },
+  "engines": {
+    "browser": "*"
+  },
+  "volo": {
+    "url": "https://raw.githubusercontent.com/strophe/strophejs/release-{version}/strophe.js"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "grunt": "~1.0.1",
+    "grunt-cli": "~1.2.0",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-mkdir": "~1.0.0",
+    "grunt-natural-docs": "~1.0.1",
+    "grunt-shell": "~2.1.0",
+    "http-server": "^0.9.0",
+    "phantomjs": "~1.9.7-1",
+    "qunit-phantomjs-runner": "^2.1.0",
+    "requirejs": "~2.3.2"
+  }
+}
